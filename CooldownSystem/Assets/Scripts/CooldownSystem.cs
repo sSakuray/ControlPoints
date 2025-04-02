@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 
 public class CooldownSystem : MonoBehaviour
 {
@@ -15,44 +15,53 @@ public class CooldownSystem : MonoBehaviour
 
     public GameObject targetObject;
 
-    private Dictionary<Button, float> cooldownTimers = new Dictionary<Button, float>();
+    private Dictionary<Button, Coroutine> activeCooldowns = new Dictionary<Button, Coroutine>();
 
     void Start()
     {
-        ability1Button.onClick.AddListener(() => UseAbility(ability1Button, Color.red, cooldown1));
-        ability2Button.onClick.AddListener(() => UseAbility(ability2Button, Color.green, cooldown2));
-        ability3Button.onClick.AddListener(() => UseAbility(ability3Button, Color.blue, cooldown3));
-
-        cooldownTimers[ability1Button] = 0f;
-        cooldownTimers[ability2Button] = 0f;
-        cooldownTimers[ability3Button] = 0f;
+        ability1Button.onClick.AddListener(() => StartAbility(ability1Button, Color.red, cooldown1));
+        ability2Button.onClick.AddListener(() => StartAbility(ability2Button, Color.green, cooldown2));
+        ability3Button.onClick.AddListener(() => StartAbility(ability3Button, Color.blue, cooldown3));
     }
 
-    void Update()
+    void StartAbility(Button button, Color abilityColor, float cooldownTime)
     {
-        foreach (var button in cooldownTimers.Keys.ToList())
+        if (!activeCooldowns.ContainsKey(button))
         {
-            if (cooldownTimers[button] > 0)
-            {
-                cooldownTimers[button] -= Time.deltaTime;
-                
-                button.interactable = false;
-
-                if (cooldownTimers[button] <= 0)
-                {
-                    button.interactable = true;
-                }
-            }
+            ApplyAbilityEffect(abilityColor);
+            
+            Coroutine cooldownCoroutine = StartCoroutine(AbilityCooldown(button, cooldownTime));
+            activeCooldowns.Add(button, cooldownCoroutine);
+            
+            button.interactable = false;
         }
     }
 
-    void UseAbility(Button button, Color abilityColor, float cooldownTime)
+    IEnumerator AbilityCooldown(Button button, float cooldownTime)
     {
-        if (cooldownTimers[button] <= 0)
-        {
-            targetObject.GetComponent<Renderer>().material.color = abilityColor;
+        yield return new WaitForSeconds(cooldownTime);
+        
+        button.interactable = true;
+        
+        activeCooldowns.Remove(button);
+    }
 
-            cooldownTimers[button] = cooldownTime;
+    void ApplyAbilityEffect(Color color)
+    {
+        if (targetObject != null)
+        {
+            targetObject.GetComponent<Renderer>().material.color = color;
+        }
+    }
+
+    void OnDestroy()
+    {
+        foreach (var coroutine in activeCooldowns.Values)
+        {
+            if (coroutine != null)
+            {
+                StopCoroutine(coroutine);
+            }
         }
     }
 }
