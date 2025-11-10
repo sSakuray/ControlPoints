@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using Cinemachine;
 public class CameraFollow : MonoBehaviour
 {
     public Transform player;
