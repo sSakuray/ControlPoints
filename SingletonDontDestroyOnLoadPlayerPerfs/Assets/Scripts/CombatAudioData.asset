@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CombatAudioData
   m_EditorClassIdentifier: 
   uniqueID: audio_combat_01
-  contentType: 0
+  contentType: 1
   dangerousList:
   - audioClip: {fileID: 8300000, guid: a349cce7bda308e44973233b5ed7ccbb, type: 3}
     volume: 1
