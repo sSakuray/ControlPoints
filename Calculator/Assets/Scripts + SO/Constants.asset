@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Constants
   m_EditorClassIdentifier: 
   gravityConst: 9.81
-  gravitationalConst: 6.6743e-11
+  speedOfLight: 299792450
+  earthMass: 5.972e+24

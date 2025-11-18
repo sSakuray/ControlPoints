@@ -8,17 +8,20 @@ public static class Calculator
     {
         return mass * acceleration;  
     }
-    public static float CalculateGravitationalForce(float mass1, float mass2, float distance, Constants constants)
+    public static float CalculateRelativisticEnergy(float mass, float velocity, Constants constants)
     {
-        return constants.gravitationalConst * (mass1 * mass2) / Mathf.Pow(distance, 2);  
+        float gamma = 1f / Mathf.Sqrt(1f - Mathf.Pow(velocity / constants.speedOfLight, 2));
+        return mass * Mathf.Pow(constants.speedOfLight, 2) * gamma;  
     }
     public static float CalculateKineticEnergy(float mass, float velocity)
     {
-        return 0.5f * mass * Mathf.Pow(velocity, 2);  
+        float velocitySquaredHalf = Mathf.Pow(velocity, 2) / 2f;
+        return mass * velocitySquaredHalf;  
     }
     public static float CalculatePotentialEnergy(float mass, float height, Constants constants)
     {
-        return mass * constants.gravityConst * height;  
+        float gravityHeight = constants.gravityConst * height;
+        return mass * gravityHeight;  
     }
     public static float CalculateWork(float force, float distance)
     {

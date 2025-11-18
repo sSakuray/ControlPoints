@@ -28,8 +28,8 @@ public class Block : MonoBehaviour
                 break;
             case 2:
                 formulaText.text = formulas.formula2;
-                label1.text = "Масса 1 (kg):";
-                label2.text = "Расстояние (m):";
+                label1.text = "Масса (kg):";
+                label2.text = "Скорость (m/s):";
                 break;
             case 3:
                 formulaText.text = formulas.formula3;
@@ -71,7 +71,7 @@ public class Block : MonoBehaviour
                 result = Calculator.CalculateForce(value1, value2);
                 break;
             case 2:
-                result = Calculator.CalculateGravitationalForce(value1, value2, value2, constants);
+                result = Calculator.CalculateRelativisticEnergy(value1, value2, constants);
                 break;
             case 3:
                 result = Calculator.CalculateKineticEnergy(value1, value2);

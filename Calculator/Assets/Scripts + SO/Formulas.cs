@@ -7,8 +7,8 @@ using UnityEngine;
 public class Formulas : ScriptableObject
 {
     public string formula1 = "F = m * a"; 
-    public string formula2 = "F = G * (m1 * m2) / r^2"; 
-    public string formula3 = "E_k = 1/2 * m * v^2";  
-    public string formula4 = "E_p = m * g * h";  
+    public string formula2 = "E = m * c^2 * gamma"; 
+    public string formula3 = "E_k = m * (v^2 / 2)";  
+    public string formula4 = "E_p = m * (g * h)";  
     public string formula5 = "W = F * s";  
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Formulas
   m_EditorClassIdentifier: 
   formula1: F = m * a
-  formula2: F = G * (m1 * m2) / r^2
-  formula3: E_k = 1/2 * m * v^2
-  formula4: E_p = m * g * h
+  formula2: E = m * c^2 * gamma
+  formula3: E_k = m * (v^2 / 2)
+  formula4: E_p = m * (g * h)
   formula5: W = F * s
