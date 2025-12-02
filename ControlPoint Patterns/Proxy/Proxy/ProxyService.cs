@@ -18,7 +18,6 @@ namespace Proxy
             _realService = new RealService();
             _lastFetchTime = DateTime.MinValue;
         }
-
         public string GetData()
         {
             if (_cachedData != null && DateTime.Now - _lastFetchTime < _cacheDuration)
@@ -26,7 +25,7 @@ namespace Proxy
                 Console.WriteLine("ProxyService: Возврат данных из кэша");
                 return _cachedData;
             }
-            Console.WriteLine("ProxyService: Кэш устарел, обращаемся к RealService");
+            Console.WriteLine("ProxyService: Кэш устарел , обращаемся к RealService");
             _cachedData = _realService.GetData();
             _lastFetchTime = DateTime.Now;
             return _cachedData;
