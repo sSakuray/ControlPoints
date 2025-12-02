@@ -34,7 +34,7 @@ namespace Proxy
             Console.WriteLine($"Результат: {result}");
             Console.WriteLine($"Время: {sw.ElapsedMilliseconds} мс\n");
 
-            Console.WriteLine("Вызов 4 (ждём 4 секунды, кэш устареет):");
+            Console.WriteLine("Вызов 4 (ждём 4 секунды , кэш устареет):");
             Thread.Sleep(4000);
             sw.Restart();
             result = service.GetData();
