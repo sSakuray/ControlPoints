@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Enemy2Behavior : EnemyBehavior
+public class Enemy2 : EnemyBehavior
 {
     [SerializeField] private float attackInterval = 1.0f;
     [SerializeField] private GameObject bulletPrefab;

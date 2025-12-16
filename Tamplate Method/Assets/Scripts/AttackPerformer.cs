@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class IntegratedAttackPerformer : MonoBehaviour
+public class AttackPerformer : MonoBehaviour
 {
     [SerializeField] private CharacterContext character;
     [SerializeField] private EnemyManager enemyManager;

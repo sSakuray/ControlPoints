@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameBootstrapper : MonoBehaviour
 {
-    [SerializeField] private IntegratedAttackPerformer attackPerformer;
+    [SerializeField] private AttackPerformer attackPerformer;
     [SerializeField] private EnemyManager enemyManager;
 
     private void Awake()
@@ -13,7 +13,7 @@ public class GameBootstrapper : MonoBehaviour
     private void InitializeSystems()
     {
         enemyManager = FindObjectOfType<EnemyManager>();
-        attackPerformer = FindObjectOfType<IntegratedAttackPerformer>();
+        attackPerformer = FindObjectOfType<AttackPerformer>();
     }
 
     public void OnAttackTypeChanged(int attackType)

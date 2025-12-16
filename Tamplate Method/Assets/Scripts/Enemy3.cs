@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Enemy3Behavior : EnemyBehavior
+public class Enemy3 : EnemyBehavior
 {
     protected override void OnSpawn()
     {

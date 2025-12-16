@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Enemy1Behavior : EnemyBehavior
+public class Enemy1 : EnemyBehavior
 {
     private bool hasAttacked = false;
 
