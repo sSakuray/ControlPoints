@@ -21,8 +21,14 @@ namespace Task2
             this.angle = angle;
         }
 
-        public float CountPerimeter(float a, float b) => 0f;
-        public float CountArea(float a, float b, float angle) => 0f;
+        public float CountPerimeter(float a, float b)
+        {
+            return 0f;
+        }
+        public float CountArea(float a, float b, float angle)
+        {
+            return 0f;
+        }
     }
 
     public class ConvexTetragon : ITetragon
@@ -38,8 +44,14 @@ namespace Task2
             this.angle = angle;
         }
 
-        public float CountPerimeter(float a, float b) => 0f;
-        public float CountArea(float a, float b, float angle) => 0f;
+        public float CountPerimeter(float a, float b)
+        {
+            return 0f;
+        }
+        public float CountArea(float a, float b, float angle)
+        {
+            return 0f;
+        }
     }
 
     public class Parallelogram : ITetragon
@@ -55,8 +67,14 @@ namespace Task2
             this.angle = angle;
         }
 
-        public float CountPerimeter(float a, float b) => 2f * (a + b);
-        public float CountArea(float a, float b, float angle) => a * b * Mathf.Sin(angle * Mathf.Deg2Rad);
+        public float CountPerimeter(float a, float b)
+        {
+            return 2f * (a + b);
+        }
+        public float CountArea(float a, float b, float angle)
+        {
+            return a * b * Mathf.Sin(angle * Mathf.Deg2Rad);
+        }
     }
 
     public class Rhombus : ITetragon
@@ -70,8 +88,14 @@ namespace Task2
             this.angle = angle;
         }
 
-        public float CountPerimeter(float a, float b) => 4f * a;
-        public float CountArea(float a, float b, float angle) => a * a * Mathf.Sin(angle * Mathf.Deg2Rad);
+        public float CountPerimeter(float a, float b)
+        {
+            return 4f * a;
+        }
+        public float CountArea(float a, float b, float angle)
+        {
+            return a * a * Mathf.Sin(angle * Mathf.Deg2Rad);
+        }
     }
 
     public class Rectangle : ITetragon
@@ -86,8 +110,14 @@ namespace Task2
             this.b = b;
         }
 
-        public float CountPerimeter(float a, float b) => 2f * (a + b);
-        public float CountArea(float a, float b, float angle) => a * b;
+        public float CountPerimeter(float a, float b)
+        {
+            return 2f * (a + b);
+        }
+        public float CountArea(float a, float b, float angle)
+        {
+            return a * b;
+        }
     }
 
     public class Square : ITetragon
@@ -100,7 +130,13 @@ namespace Task2
             this.a = a;
         }
 
-        public float CountPerimeter(float a, float b) => 4f * a;
-        public float CountArea(float a, float b, float angle) => a * a;
+        public float CountPerimeter(float a, float b)
+        {
+            return 4f * a;
+        }
+        public float CountArea(float a, float b, float angle)
+        {
+            return a * a;
+        }
     }
 }
