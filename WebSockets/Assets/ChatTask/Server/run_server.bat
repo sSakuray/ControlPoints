@@ -1,6 +1,4 @@
 @echo off
-echo Installing dependencies (if needed)...
 call npm install
-echo Starting WebSocket server...
 call npm start
 pause

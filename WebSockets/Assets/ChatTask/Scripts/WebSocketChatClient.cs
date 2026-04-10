@@ -9,51 +9,35 @@ using UnityEngine.UI;
 
 public class WebSocketChatClient : MonoBehaviour
 {
-    private ClientWebSocket _webSocket;
-    private CancellationTokenSource _cancellationTokenSource;
-    private string serverUrl = "ws://localhost:8080";
-    private string _messageToSend = "";
     public Text chatHistoryText;
     public InputField messageInput;
     public Button sendButton;
     public ScrollRect scrollRect;
 
+    private ClientWebSocket _webSocket;
+    private CancellationTokenSource _cancellationTokenSource;
     private List<string> _chatHistory = new List<string>();
     private bool _requiresUiUpdate = false;
     
     async void Start()
     {
-        if (sendButton != null)
-        {   
-            sendButton.onClick.AddListener(SendChatMessage);
-        }
-
-        if (messageInput != null)
-        {
-            messageInput.onSubmit.AddListener(delegate { SendChatMessage(); });
-        }
+        sendButton.onClick.AddListener(SendChatMessage);
+        messageInput.onSubmit.AddListener(delegate { SendChatMessage(); });
 
         _webSocket = new ClientWebSocket();
         _cancellationTokenSource = new CancellationTokenSource();
 
         try
         {
-            lock (_chatHistory) { 
-                _chatHistory.Add("<i><color=grey>Система: Подключение...</color></i>"); 
-                _requiresUiUpdate = true;
-            }
-            
-            await _webSocket.ConnectAsync(new Uri(serverUrl), _cancellationTokenSource.Token);
-            lock (_chatHistory) { 
-                _chatHistory.Add("<i><color=green>Система: Успешно подключено!</color></i>"); 
-                _requiresUiUpdate = true;
-            }
+            LogMessage("Система: Подключение...");
+            await _webSocket.ConnectAsync(new Uri("ws://localhost:8080"), _cancellationTokenSource.Token);
+            LogMessage("Система: Успешно подключено!");
             
             _ = ReceiveMessages();
         }
-        catch (Exception e)
+        catch (Exception)
         {
-            Debug.LogError($"Connection error: {e.Message}");
+            LogMessage("Система: Ошибка подключения");
         }
     }
 
@@ -61,38 +45,26 @@ public class WebSocketChatClient : MonoBehaviour
     {
         var buffer = new byte[1024];
 
-        while (_webSocket != null && _webSocket.State == WebSocketState.Open)
+        while (_webSocket.State == WebSocketState.Open)
         {
             try
             {
                 var result = await _webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), _cancellationTokenSource.Token);
-
                 if (result.MessageType == WebSocketMessageType.Close)
                 {
-                    await _webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, string.Empty, _cancellationTokenSource.Token);
-                    lock (_chatHistory) { 
-                        _chatHistory.Add("<i><color=red>Система: Соединение закрыто</color></i>"); 
-                        _requiresUiUpdate = true;
-                    }
+                    await _webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, "", _cancellationTokenSource.Token);
+                    LogMessage("Система: Соединение закрыто");
                 }
                 else
                 {
-                    var message = Encoding.UTF8.GetString(buffer, 0, result.Count);
-                    lock (_chatHistory) 
-                    { 
-                        _chatHistory.Add($"<b><color=orange>Собеседник:</color></b> {message}");
-                        _requiresUiUpdate = true;
-                    }
+                    LogMessage($"Собеседник: {Encoding.UTF8.GetString(buffer, 0, result.Count)}");
                 }
             }
-            catch (Exception)
+            catch
             {
                 if (!_cancellationTokenSource.IsCancellationRequested)
                 {
-                    lock (_chatHistory) { 
-                        _chatHistory.Add("<i><color=red>Система: Ошибка соединения</color></i>"); 
-                        _requiresUiUpdate = true;
-                    }
+                    LogMessage("Система: Ошибка соединения");
                 }
                 break;
             }
@@ -101,69 +73,39 @@ public class WebSocketChatClient : MonoBehaviour
 
     public async void SendChatMessage()
     {
-        string textToSend = messageInput != null ? messageInput.text : "";
-        if (string.IsNullOrWhiteSpace(textToSend)) 
-        {
-            return;
-        }
+        var textToSend = messageInput.text;
+        var buffer = Encoding.UTF8.GetBytes(textToSend);
+        
+        await _webSocket.SendAsync(new ArraySegment<byte>(buffer), WebSocketMessageType.Text, true, _cancellationTokenSource.Token);
+        
+        LogMessage($"Вы: {textToSend}");
+        messageInput.text = ""; 
+        messageInput.ActivateInputField();
+    }
 
-        if (_webSocket != null && _webSocket.State == WebSocketState.Open)
+    private void LogMessage(string message)
+    {
+        lock (_chatHistory)
         {
-            var buffer = Encoding.UTF8.GetBytes(textToSend);
-            await _webSocket.SendAsync(new ArraySegment<byte>(buffer), WebSocketMessageType.Text, true, _cancellationTokenSource.Token);
-            
-            lock (_chatHistory) 
-            { 
-                _chatHistory.Add($"<b><color=cyan>Вы:</color></b> {textToSend}"); 
-                _requiresUiUpdate = true;
-            }
-            if (messageInput != null) 
-            {
-                messageInput.text = ""; 
-                messageInput.ActivateInputField();
-            }
+            _chatHistory.Add(message);
+            _requiresUiUpdate = true;
         }
     }
 
     void Update()
     {
-        if (_requiresUiUpdate)
+        lock (_chatHistory)
         {
-            lock (_chatHistory)
-            {
-                if (chatHistoryText != null)
-                {
-                    chatHistoryText.text = string.Join("\n", _chatHistory);
-                }
-                _requiresUiUpdate = false;
-            }
-
-            if (scrollRect != null)
-            {
-                Canvas.ForceUpdateCanvases();
-                scrollRect.verticalNormalizedPosition = 0f;
-            }
+            chatHistoryText.text = string.Join("\n", _chatHistory);
+            _requiresUiUpdate = false;
         }
+
+        Canvas.ForceUpdateCanvases();
     }
 
-    private async void OnDestroy()
+    private void OnDestroy()
     {
-        if (_cancellationTokenSource != null)
-        {
-            _cancellationTokenSource.Cancel();
-        }
-
-        if (_webSocket != null && _webSocket.State == WebSocketState.Open)
-        {
-            try
-            {
-                await _webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Closing connection", CancellationToken.None);
-            }
-            catch (Exception) {  }
-        }
-        
+        _cancellationTokenSource?.Cancel();
         _webSocket?.Dispose();
     }
-    
-
 }
