@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da17635ebf4f8c14d8113d0bed796d46, type: 3}
+  m_Name: MysteriousElf
+  m_EditorClassIdentifier: 
+  _cardName: "\u041A\u0430\u0440\u0442\u0430 \u0431\u043E\u0439\u0446\u0430 \u0431\u043B\u0438\u0436\u043D\u0435\u0433\u043E
+    \u0431\u043E\u044F \u0441\u043E \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0439
+    \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u044C\u044E \u0428\u043F\u0438\u043E\u043D "
+  _icon: {fileID: -3122886141151092559, guid: 91ad2e604a0f89d48b9741d8c7c44398, type: 3}
+  _description: "(\u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u044C
+    \u0448\u043F\u0438\u043E\u043D)"
+  _strengthPoints: 7

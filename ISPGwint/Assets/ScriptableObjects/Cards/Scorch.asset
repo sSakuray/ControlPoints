@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66a2b0c14b0bd504b9d474e6c8b65ddb, type: 3}
+  m_Name: Scorch
+  m_EditorClassIdentifier: 
+  _cardName: "\u041A\u0430\u0440\u0442\u0430 \u0441\u043E \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0439
+    \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u044C\u044E \u041A\u0430\u0437\u043D\u044C"
+  _icon: {fileID: -1884195800462263965, guid: ea84d03c8c58d3345b3bee157f689105, type: 3}
+  _description: "\u041A\u0430\u0437\u043D\u044C"
