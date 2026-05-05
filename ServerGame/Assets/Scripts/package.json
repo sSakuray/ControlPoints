@@ -1,0 +1,10 @@
+{
+  "name": "shooter-server",
+  "version": "1.0.0",
+  "description": "UDP game server for 2D Multiplayer Shooter",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "dependencies": {}
+}
