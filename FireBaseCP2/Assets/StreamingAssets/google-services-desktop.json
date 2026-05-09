@@ -1,0 +1,32 @@
+{
+  "project_info": {
+    "project_number": "711759614553",
+    "firebase_url": "https://sstest-e046b-default-rtdb.firebaseio.com",
+    "project_id": "sstest-e046b",
+    "storage_bucket": "sstest-e046b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711759614553:ios:7b18773ffbd12614ac9748",
+        "android_client_info": {
+          "package_name": "com.sS.test.database"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIGedyRkJAB5Ef3QJfYeYYCJE850Jdu2Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
