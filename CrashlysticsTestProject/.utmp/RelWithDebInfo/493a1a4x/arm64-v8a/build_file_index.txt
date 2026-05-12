@@ -1,0 +1,3 @@
+D:\ReposGitHub\ControlPoints\CrashlysticsTestProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+D:\ReposGitHub\ControlPoints\CrashlysticsTestProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
+D:\ReposGitHub\ControlPoints\CrashlysticsTestProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
