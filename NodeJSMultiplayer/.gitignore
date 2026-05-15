@@ -1,0 +1,82 @@
+# ==============
+# STANDARD UNITY
+# ==============
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Tt]rash/
+
+# ==============
+# VISUAL STUDIO
+# ==============
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# ==============
+# BUILDS & PACKAGES
+# ==============
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+
+# ==============
+# FIREBASE - ЭТО САМОЕ ВАЖНОЕ!
+# ==============
+# Игнорируем ВСЕ нативные плагины (они большие)
+*.bundle
+*.so
+*.dylib
+*.dll
+*.a
+
+# Но сохраняем .meta файлы для них
+!*.meta
+
+# ==============
+# OS & EDITOR FILES
+# ==============
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+sysinfo.txt
+crashlytics-build.properties
+UnityLockfile
+.consulo/
+_ReSharper*/
+.resharper
+*.vsconfig
+
+# ==============
+# GRADLE (Android)
+# ==============
+.gradle/
+
+# ==============
+# ADDRESSABLES
+# ==============
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ownloads/*.bin*
+/[Aa]ssets/[Ss]treamingAssets/aa/
