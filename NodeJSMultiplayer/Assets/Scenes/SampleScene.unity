@@ -889,7 +889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serverIP: 127.0.0.1
   serverPort: 7777
-  playerId: Player_2
+  playerId: Player_1
 --- !u!4 &1543600427
 Transform:
   m_ObjectHideFlags: 0
