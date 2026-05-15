@@ -9,18 +9,18 @@ using UnityEngine;
 public class PlayerState
 {
     public string id;
-    public float  x;
-    public float  y;
-    public int    hp;
+    public float x;
+    public float y;
+    public int hp;
 }
 
 [Serializable]
 public class BulletState
 {
-    public int    id;
+    public int id;
     public string ownerId;
-    public float  x;
-    public float  y;
+    public float x;
+    public float y;
 }
 
 [Serializable]
@@ -34,18 +34,18 @@ public class GameState
 public class InputPacket
 {
     public string id;
-    public float  inputX;
-    public float  inputY;
-    public float  shootDirX;
-    public float  shootDirY;
-    public bool   shoot;
-    public bool   restart;
+    public float inputX;
+    public float inputY;
+    public float shootDirX;
+    public float shootDirY;
+    public bool shoot;
+    public bool restart;
 }
 
 public class NetworkManager : MonoBehaviour
 {
     public static NetworkManager Instance { get; private set; }
-    public string serverIP   = "127.0.0.1";
+    public string serverIP = "127.0.0.1";
     public int serverPort = 7777;
 
     public string playerId = "Player_1";
@@ -71,6 +71,7 @@ public class NetworkManager : MonoBehaviour
 
     void Start()
     {
+        Application.runInBackground = true;
         _udp = new UdpClient();
         _udp.Connect(serverIP, serverPort);
         _running = true;
