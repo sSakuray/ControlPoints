@@ -3,19 +3,14 @@ using Zenject;
 
 public class GameInstaller : MonoInstaller
 {
-    [Header("UI")]
     [SerializeField] private MainScreenView mainScreenView;
     [SerializeField] private PanelView panelView;
-
-    [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip openClip;
     [SerializeField] private AudioClip closeClip;
     [SerializeField] private AudioClip shootClip;
     [SerializeField] private AudioClip hitClip;
     [SerializeField] private bool useJsonSaver = true;
-
-    [Header("Gameplay")]
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private GameObject debrisPrefab;
     [SerializeField] private GameObject playerObject;

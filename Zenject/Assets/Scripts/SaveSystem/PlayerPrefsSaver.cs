@@ -7,7 +7,10 @@ public class PlayerPrefsSaver : ISaver
     private const string ScoreKey = "SavedScore";
 
     [Inject]
-    public PlayerPrefsSaver(Score score) { _score = score; }
+    public PlayerPrefsSaver(Score score) 
+    { 
+        _score = score; 
+    }
 
     public void SaveScore(string path = null)
     {
@@ -15,5 +18,8 @@ public class PlayerPrefsSaver : ISaver
         PlayerPrefs.Save();
     }
 
-    public int LoadScore(string path = null) { return PlayerPrefs.GetInt(ScoreKey, 0); }
+    public int LoadScore(string path = null) 
+    { 
+        return PlayerPrefs.GetInt(ScoreKey, 0); 
+    }
 }

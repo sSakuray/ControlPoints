@@ -65,7 +65,10 @@ public class Bullet : MonoBehaviour, IPoolable<Transform, IMemoryPool>, System.I
 
     public void Dispose()
     {
-        if (_pool != null) _pool.Despawn(this);
+        if (_pool != null)
+        {
+            _pool.Despawn(this);   
+        }
     }
 
     private void FixedUpdate()
@@ -90,8 +93,14 @@ public class Bullet : MonoBehaviour, IPoolable<Transform, IMemoryPool>, System.I
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.GetComponentInParent<SimplePlayerMovement>() != null) return;
-        if (other.isTrigger && other.GetComponent<DestructibleObstacle>() == null) return;
+        if (other.GetComponentInParent<SimplePlayerMovement>() != null) 
+        {
+            return;
+        }
+        if (other.isTrigger && other.GetComponent<DestructibleObstacle>() == null)
+        {
+            return;
+        }
         DestructibleObstacle obstacle = other.GetComponent<DestructibleObstacle>();
         if (obstacle != null)
         {
@@ -103,7 +112,10 @@ public class Bullet : MonoBehaviour, IPoolable<Transform, IMemoryPool>, System.I
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.GetComponentInParent<SimplePlayerMovement>() != null) return;
+        if (collision.collider.GetComponentInParent<SimplePlayerMovement>() != null)
+        {
+            return;   
+        }
         DestructibleObstacle obstacle = collision.gameObject.GetComponent<DestructibleObstacle>();
         if (obstacle != null)
         {

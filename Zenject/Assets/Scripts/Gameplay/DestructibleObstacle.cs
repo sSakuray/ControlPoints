@@ -22,7 +22,10 @@ public class DestructibleObstacle : MonoBehaviour
             Vector2 dir = (debris.transform.position - transform.position).normalized;
             debris.GetComponent<Rigidbody2D>().AddForce((dir == Vector2.zero ? Random.insideUnitCircle.normalized : dir) * 500f);
             Collider2D debrisCol = debris.GetComponent<Collider2D>();
-            if (debrisCol != null && _playerCollider != null) Physics2D.IgnoreCollision(debrisCol, _playerCollider);
+            if (debrisCol != null && _playerCollider != null)
+            {
+                Physics2D.IgnoreCollision(debrisCol, _playerCollider);
+            }
             Destroy(debris, 3f);
         }
         Destroy(gameObject);
