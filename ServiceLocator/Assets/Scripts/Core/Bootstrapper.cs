@@ -36,10 +36,7 @@ public class Bootstrapper : MonoBehaviour
 
         _uiSwitcher = new UISwitcher();
 
-        _mainScreenState = new MainScreenController(
-            mainScreenView,
-            onOpenPanelRequested: () => _uiSwitcher.ChangeState(_panelState)
-        );
+        _mainScreenState = new MainScreenController(mainScreenView,onOpenPanelRequested: () => _uiSwitcher.ChangeState(_panelState));
 
         _panelState = new PanelController(
             panelView,
