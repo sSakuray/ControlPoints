@@ -4,14 +4,13 @@ using Zenject;
 public class DestructibleObstacle : MonoBehaviour
 {
     public int debrisCount = 5;
-    private GameObject _debrisPrefab;
+    [SerializeField] private GameObject _debrisPrefab;
     private Collider2D _playerCollider;
 
     [Inject]
-    public void Construct([Inject(Id = "DebrisPrefab")] GameObject debrisPrefab, [Inject(Id = "PlayerCollider")] Collider2D playerCollider)
+    public void Construct(SimplePlayerMovement player)
     {
-        _debrisPrefab = debrisPrefab;
-        _playerCollider = playerCollider;
+        _playerCollider = player.GetComponent<Collider2D>();
     }
 
     public void DestroyObstacle()

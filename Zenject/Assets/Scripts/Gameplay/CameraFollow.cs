@@ -8,9 +8,9 @@ public class CameraFollow : MonoBehaviour
     private Transform _target;
 
     [Inject]
-    public void Construct([Inject(Id = "CameraTarget")] Transform target)
+    public void Construct(SimplePlayerMovement player)
     {
-        _target = target;
+        _target = player.transform;
     }
 
     private void LateUpdate()

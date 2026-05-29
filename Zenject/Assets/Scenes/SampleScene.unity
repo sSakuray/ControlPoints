@@ -859,6 +859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debrisCount: 6
+  _debrisPrefab: {fileID: 4410907327436928423, guid: f6cf48d6ced6c9047bb14e39c157b06d, type: 3}
 --- !u!61 &317478412
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1280,6 +1281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debrisCount: 6
+  _debrisPrefab: {fileID: 4410907327436928423, guid: f6cf48d6ced6c9047bb14e39c157b06d, type: 3}
 --- !u!61 &583959378
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1549,6 +1551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debrisCount: 6
+  _debrisPrefab: {fileID: 4410907327436928423, guid: f6cf48d6ced6c9047bb14e39c157b06d, type: 3}
 --- !u!61 &627000754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1784,6 +1787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debrisCount: 6
+  _debrisPrefab: {fileID: 4410907327436928423, guid: f6cf48d6ced6c9047bb14e39c157b06d, type: 3}
 --- !u!61 &994387532
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2239,6 +2243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debrisCount: 6
+  _debrisPrefab: {fileID: 4410907327436928423, guid: f6cf48d6ced6c9047bb14e39c157b06d, type: 3}
 --- !u!61 &1296108489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3174,7 +3179,6 @@ MonoBehaviour:
   hitClip: {fileID: 8300000, guid: a61278567e62d874ab1cc7ec031da803, type: 3}
   useJsonSaver: 1
   bulletPrefab: {fileID: 837748594572142478, guid: 7608482b4105c8846a372851d1bcd271, type: 3}
-  debrisPrefab: {fileID: 4410907327436928423, guid: f6cf48d6ced6c9047bb14e39c157b06d, type: 3}
   playerObject: {fileID: 1604590409}
   target: {fileID: 1023200109}
 --- !u!114 &1967202157
@@ -3271,6 +3275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debrisCount: 6
+  _debrisPrefab: {fileID: 4410907327436928423, guid: f6cf48d6ced6c9047bb14e39c157b06d, type: 3}
 --- !u!61 &1971888991
 BoxCollider2D:
   m_ObjectHideFlags: 0

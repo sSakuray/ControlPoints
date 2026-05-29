@@ -1,7 +1,7 @@
 using UnityEngine;
 using Zenject;
 
-public class Bullet : MonoBehaviour, IPoolable<Transform, IMemoryPool>, System.IDisposable
+public class Bullet : MonoBehaviour, IPoolable<IMemoryPool>, System.IDisposable
 {
     public float flySpeed = 10f;
     public float checkRadius = 5f;
@@ -16,9 +16,13 @@ public class Bullet : MonoBehaviour, IPoolable<Transform, IMemoryPool>, System.I
     private Rigidbody2D _rb;
 
     [Inject]
-    public void Construct(ISoundPlayer soundPlayer)
+    public void Construct(ISoundPlayer soundPlayer, Target target)
     {
         _soundPlayer = soundPlayer;
+        if (target != null)
+        {
+            _targetTransform = target.transform;
+        }
     }
 
     private void Awake()
@@ -29,9 +33,8 @@ public class Bullet : MonoBehaviour, IPoolable<Transform, IMemoryPool>, System.I
         _rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
 
-    public void OnSpawned(Transform targetTransform, IMemoryPool pool)
+    public void OnSpawned(IMemoryPool pool)
     {
-        _targetTransform = targetTransform;
         _pool = pool;
         _timer = 0f;
         _hasTarget = false;
@@ -60,7 +63,6 @@ public class Bullet : MonoBehaviour, IPoolable<Transform, IMemoryPool>, System.I
     public void OnDespawned()
     {
         _pool = null;
-        _targetTransform = null;
     }
 
     public void Dispose()
@@ -102,21 +104,6 @@ public class Bullet : MonoBehaviour, IPoolable<Transform, IMemoryPool>, System.I
             return;
         }
         DestructibleObstacle obstacle = other.GetComponent<DestructibleObstacle>();
-        if (obstacle != null)
-        {
-            _soundPlayer.PlayHitSound();
-            obstacle.DestroyObstacle();
-        }
-        Dispose();
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.GetComponentInParent<SimplePlayerMovement>() != null)
-        {
-            return;   
-        }
-        DestructibleObstacle obstacle = collision.gameObject.GetComponent<DestructibleObstacle>();
         if (obstacle != null)
         {
             _soundPlayer.PlayHitSound();

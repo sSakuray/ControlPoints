@@ -1,43 +1,49 @@
 using UnityEngine;
 using Zenject;
 
-public class SoundPlayer : ISoundPlayer {
+public struct SoundConfig 
+{
+    public AudioClip Open;
+    public AudioClip Close;
+    public AudioClip Shoot;
+    public AudioClip Hit;
+}
+
+public class SoundPlayer : ISoundPlayer 
+{
     private readonly AudioSource _audioSource;
-    private readonly AudioClip _openClip;
-    private readonly AudioClip _closeClip;
-    private readonly AudioClip _shootClip;
-    private readonly AudioClip _hitClip;
+    private readonly SoundConfig _config;
 
     [Inject]
-    public SoundPlayer(AudioSource audioSource, [Inject(Id = "Open")] AudioClip openClip, [Inject(Id = "Close")] AudioClip closeClip, [InjectOptional(Id = "Shoot")] AudioClip shootClip, [InjectOptional(Id = "Hit")] AudioClip hitClip) 
+    public SoundPlayer(AudioSource audioSource, SoundConfig config) 
     {
         _audioSource = audioSource;
-        _openClip = openClip;
-        _closeClip = closeClip;
-        _shootClip = shootClip;
-        _hitClip = hitClip;
+        _config = config;
     }
 
     public void PlayOpenSound() 
     { 
-        _audioSource.PlayOneShot(_openClip); 
+        _audioSource.PlayOneShot(_config.Open); 
     }
+    
     public void PlayCloseSound() 
     { 
-        _audioSource.PlayOneShot(_closeClip); 
+        _audioSource.PlayOneShot(_config.Close); 
     }
+    
     public void PlayShootSound() 
     { 
-        if (_shootClip != null) 
+        if (_config.Shoot != null) 
         {
-            _audioSource.PlayOneShot(_shootClip);
+            _audioSource.PlayOneShot(_config.Shoot);
         }
     }
+    
     public void PlayHitSound() 
     { 
-        if (_hitClip != null)
+        if (_config.Hit != null)
         {
-            _audioSource.PlayOneShot(_hitClip);    
+            _audioSource.PlayOneShot(_config.Hit);    
         }
     }
 }

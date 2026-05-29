@@ -7,10 +7,9 @@ public class SimplePlayerMovement : MonoBehaviour
     private Rigidbody2D _rb;
     private Vector2 _input;
 
-    [Inject]
-    public void Construct(Rigidbody2D rb)
+    private void Awake()
     {
-        _rb = rb;
+        _rb = GetComponent<Rigidbody2D>();
         _rb.isKinematic = false;
         _rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }

@@ -11,8 +11,8 @@ public class GameInstaller : MonoInstaller
     [SerializeField] private AudioClip shootClip;
     [SerializeField] private AudioClip hitClip;
     [SerializeField] private bool useJsonSaver = true;
+    [SerializeField] private string jsonFileName = "score.json";
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private GameObject debrisPrefab;
     [SerializeField] private GameObject playerObject;
     [SerializeField] private Target target;
 
@@ -36,16 +36,15 @@ public class GameInstaller : MonoInstaller
     private void InstallAudio()
     {
         Container.Bind<AudioSource>().FromInstance(audioSource).AsSingle();
-        Container.Bind<AudioClip>().WithId("Open").FromInstance(openClip);
-        Container.Bind<AudioClip>().WithId("Close").FromInstance(closeClip);
-        if (shootClip != null)
+        
+        Container.BindInstance(new SoundConfig 
         {
-            Container.Bind<AudioClip>().WithId("Shoot").FromInstance(shootClip);
-        }
-        if (hitClip != null) 
-        {
-            Container.Bind<AudioClip>().WithId("Hit").FromInstance(hitClip);
-        }
+            Open = openClip,
+            Close = closeClip,
+            Shoot = shootClip,
+            Hit = hitClip
+        }).AsSingle();
+
         Container.Bind<ISoundPlayer>().To<SoundPlayer>().AsSingle();
     }
 
@@ -53,7 +52,8 @@ public class GameInstaller : MonoInstaller
     {
         if (useJsonSaver) 
         {
-            Container.Bind<ISaver>().To<JsonSaver>().AsSingle();
+            string fullPath = System.IO.Path.Combine(Application.persistentDataPath, jsonFileName);
+            Container.Bind<ISaver>().To<JsonSaver>().AsSingle().WithArguments(fullPath);
         }
         else 
         {
@@ -67,59 +67,15 @@ public class GameInstaller : MonoInstaller
         Container.Bind<IFadeService>().To<FadeService>().AsSingle();
         InstallSaveSystem();
 
-        if (debrisPrefab != null)
-        {
-            Container.Bind<GameObject>().WithId("DebrisPrefab").FromInstance(debrisPrefab);
-        }
-        if (target != null)
-        {
-            Container.Bind<Target>().FromInstance(target).AsSingle();
-        }
-        if (bulletPrefab != null)
-        {
-            Container.BindFactory<Transform, Bullet, BulletFactory>()
-                .FromMonoPoolableMemoryPool<Transform, Bullet>(poolBinder => poolBinder
-                    .WithInitialSize(10)
-                    .FromComponentInNewPrefab(bulletPrefab)
-                    .UnderTransformGroup("Bullets"));
-        }
+        Container.Bind<Target>().FromInstance(target).AsSingle();
+        
+        Container.BindFactory<Bullet, BulletFactory>()
+            .FromMonoPoolableMemoryPool<Bullet>(poolBinder => poolBinder
+                .WithInitialSize(10)
+                .FromComponentInNewPrefab(bulletPrefab)
+                .UnderTransformGroup("Bullets"));
 
-        if (playerObject != null)
-        {
-            Rigidbody2D playerRb = playerObject.GetComponent<Rigidbody2D>();
-            if (playerRb != null)
-            {
-                Container.Bind<Rigidbody2D>().FromInstance(playerRb).AsSingle();
-            }
-            Collider2D playerCol = playerObject.GetComponent<Collider2D>();
-            if (playerCol != null)
-            {
-                Container.Bind<Collider2D>().WithId("PlayerCollider").FromInstance(playerCol).AsSingle();
-            }
-            Container.Bind<Transform>().WithId("CameraTarget").FromInstance(playerObject.transform).AsSingle();
-        }
-    }
-}
-
-public class UIInitializer : IInitializable
-{
-    private readonly UISwitcher _uiSwitcher;
-    private readonly MainScreenController _mainScreenController;
-    private readonly ISaver _saver;
-    private readonly Score _score;
-
-    [Inject]
-    public UIInitializer(UISwitcher uiSwitcher, MainScreenController mainScreenController, ISaver saver, Score score)
-    {
-        _uiSwitcher = uiSwitcher;
-        _mainScreenController = mainScreenController;
-        _saver = saver;
-        _score = score;
-    }
-
-    public void Initialize()
-    {
-        _score.SetScore(_saver.LoadScore());
-        _uiSwitcher.ChangeState(_mainScreenController);
+        SimplePlayerMovement player = playerObject.GetComponent<SimplePlayerMovement>();
+        Container.Bind<SimplePlayerMovement>().FromInstance(player).AsSingle();
     }
 }
