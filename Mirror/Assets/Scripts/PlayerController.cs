@@ -8,12 +8,18 @@ public class PlayerController : NetworkBehaviour
     public Transform firePoint;
     public float shootCooldown = 0.3f;
     public SpriteRenderer bodySprite;
+
     public static bool IsGameActive = false;
-    private static readonly Color HostColor = new Color(0.2f, 0.5f, 1f);
-    private static readonly Color ClientColor = new Color(1f, 0.3f, 0.3f);
+
+    public static readonly Color TeamAColor = new Color(0.2f, 0.5f, 1f);   // Blue
+    public static readonly Color TeamBColor = new Color(1f, 0.3f, 0.3f);   // Red
+
     private Rigidbody2D _rb;
     private Camera _cam;
     private float _lastShotTime;
+
+    [SyncVar(hook = nameof(OnTeamChanged))]
+    public int team; // 0 = Team A (Blue), 1 = Team B (Red)
 
     [SyncVar(hook = nameof(OnColorChanged))]
     private Color _playerColor;
@@ -21,7 +27,7 @@ public class PlayerController : NetworkBehaviour
     public override void OnStartServer()
     {
         base.OnStartServer();
-        _playerColor = NetworkServer.connections.Count <= 1 ? HostColor : ClientColor;
+        _playerColor = team == 0 ? TeamAColor : TeamBColor;
     }
 
     public override void OnStartLocalPlayer()
@@ -58,12 +64,10 @@ public class PlayerController : NetworkBehaviour
 
     private void Update()
     {
-        if (!isLocalPlayer)
-        {
-            return;
-        }
+        if (!isLocalPlayer) return;
 
-        if (!IsGameActive)
+        PlayerHealth health = GetComponent<PlayerHealth>();
+        if (!IsGameActive || (health != null && health.isDead))
         {
             _rb.linearVelocity = Vector2.zero;
             return;
@@ -84,26 +88,17 @@ public class PlayerController : NetworkBehaviour
 
     private void HandleFlip()
     {
-        if (_cam == null)
-        {
-            return;
-        }
+        if (_cam == null) return;
         Vector3 mouseWorld = _cam.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 diff = (mouseWorld - transform.position);
+        Vector2 diff = mouseWorld - transform.position;
         float angle = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
     }
 
     private void HandleShooting()
     {
-        if (!Input.GetMouseButton(0))
-        {
-            return;
-        }
-        if (Time.time - _lastShotTime < shootCooldown)
-        {
-            return;
-        }
+        if (!Input.GetMouseButton(0)) return;
+        if (Time.time - _lastShotTime < shootCooldown) return;
 
         _lastShotTime = Time.time;
 
@@ -119,19 +114,39 @@ public class PlayerController : NetworkBehaviour
     [Command]
     private void CmdShoot(Vector2 spawnPos, Vector2 direction)
     {
-        if (bulletPrefab == null)
-        {
-            return;
-        }
+        if (bulletPrefab == null) return;
 
         GameObject bullet = Instantiate(bulletPrefab, spawnPos, Quaternion.identity);
+        bullet.SetActive(true);
         Bullet bulletScript = bullet.GetComponent<Bullet>();
         if (bulletScript != null)
         {
-            bulletScript.Init(direction, netIdentity);
+            bulletScript.Init(direction, netIdentity, team);
         }
         NetworkServer.Spawn(bullet);
         Destroy(bullet, 3f);
+    }
+
+    [ClientRpc]
+    public void RpcTeleport(Vector3 position)
+    {
+        transform.position = position;
+        if (_rb != null) _rb.linearVelocity = Vector2.zero;
+    }
+
+    [ClientRpc]
+    public void RpcSetGameActive(bool active)
+    {
+        IsGameActive = active;
+    }
+
+    private void OnTeamChanged(int oldTeam, int newTeam)
+    {
+        _playerColor = newTeam == 0 ? TeamAColor : TeamBColor;
+        if (bodySprite != null)
+        {
+            bodySprite.color = _playerColor;
+        }
     }
 
     private void OnColorChanged(Color oldColor, Color newColor)

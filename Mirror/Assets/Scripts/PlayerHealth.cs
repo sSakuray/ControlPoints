@@ -4,51 +4,65 @@ using UnityEngine;
 public class PlayerHealth : NetworkBehaviour
 {
     public const int MaxHits = 3;
+
     [SyncVar(hook = nameof(OnHitsChanged))]
-    public int hits = 0;
+    public int hits;
+
+    [SyncVar(hook = nameof(OnDeadChanged))]
+    public bool isDead;
+
     private PlayerNameLabel _label;
+
     public void RegisterLabel(PlayerNameLabel label)
     {
         _label = label;
-        if (_label != null)
-        {
-            _label.UpdateHealthUI(hits);
-        }
+        if (_label != null) _label.UpdateHealthUI(hits);
     }
 
     [Server]
     public void TakeHit()
     {
-        if (!isServer)
-        {
-            return;
-        }
+        if (isDead) return;
 
         hits++;
 
         if (hits >= MaxHits)
         {
-            Invoke(nameof(DestroyPlayer), 0.1f);
+            isDead = true;
+
+            if (GameNetworkManager.Instance != null)
+            {
+                GameNetworkManager.Instance.OnPlayerDied();
+            }
         }
     }
 
     [Server]
-    private void DestroyPlayer()
+    public void Respawn()
     {
-        RpcOnDeath();
-        NetworkServer.Destroy(gameObject);
+        hits = 0;
+        isDead = false;
     }
 
     private void OnHitsChanged(int oldVal, int newVal)
     {
-        if (_label != null)
+        if (_label != null) _label.UpdateHealthUI(newVal);
+
+        // Обновить локальный HUD
+        if (isLocalPlayer)
         {
-            _label.UpdateHealthUI(newVal);
+            GameHUD.OnLocalHealthChanged?.Invoke(newVal);
         }
     }
 
-    [ClientRpc]
-    private void RpcOnDeath()
+    private void OnDeadChanged(bool oldVal, bool newVal)
     {
+        // Визуальная обратная связь: полупрозрачность при смерти
+        foreach (SpriteRenderer sr in GetComponentsInChildren<SpriteRenderer>())
+        {
+            Color c = sr.color;
+            c.a = newVal ? 0.3f : 1f;
+            sr.color = c;
+        }
     }
 }

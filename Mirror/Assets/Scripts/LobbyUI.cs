@@ -13,8 +13,9 @@ public class LobbyUI : MonoBehaviour
     public TMP_InputField ipInputField;
     public TextMeshProUGUI statusText;
     public TextMeshProUGUI playerCountText;
-    public GameObject gamePanel;
-    public static Action<int> OnPlayerCountChanged;
+
+    public static Action<MatchStateMessage> OnMatchStateChanged;
+
     private NetworkManager _networkManager;
 
     private void Awake()
@@ -24,38 +25,20 @@ public class LobbyUI : MonoBehaviour
 
     private void OnEnable()
     {
-        OnPlayerCountChanged += HandlePlayerCountChanged;
+        OnMatchStateChanged += HandleMatchState;
 
-        if (hostButton != null)
-        {
-            hostButton.onClick.AddListener(OnHostClicked);
-        }
-        if (joinButton != null)
-        {
-            joinButton.onClick.AddListener(OnJoinClicked);
-        }
-        if (stopButton != null)
-        {
-            stopButton.onClick.AddListener(OnStopClicked);
-        }
+        if (hostButton != null) hostButton.onClick.AddListener(OnHostClicked);
+        if (joinButton != null) joinButton.onClick.AddListener(OnJoinClicked);
+        if (stopButton != null) stopButton.onClick.AddListener(OnStopClicked);
     }
 
     private void OnDisable()
     {
-        OnPlayerCountChanged -= HandlePlayerCountChanged;
+        OnMatchStateChanged -= HandleMatchState;
 
-        if (hostButton != null)
-        {
-            hostButton.onClick.RemoveListener(OnHostClicked);
-        }
-        if (joinButton != null)
-        {
-            joinButton.onClick.RemoveListener(OnJoinClicked);
-        }
-        if (stopButton != null)
-        {
-            stopButton.onClick.RemoveListener(OnStopClicked);
-        }
+        if (hostButton != null) hostButton.onClick.RemoveListener(OnHostClicked);
+        if (joinButton != null) joinButton.onClick.RemoveListener(OnJoinClicked);
+        if (stopButton != null) stopButton.onClick.RemoveListener(OnStopClicked);
     }
 
     private void Start()
@@ -65,122 +48,84 @@ public class LobbyUI : MonoBehaviour
 
     private void OnHostClicked()
     {
-        if (_networkManager != null)
-        {
-            _networkManager.StartHost();
-            SetStatus("Waiting for second player...");
-            SetLobbyButtonsActive(false);
-            if (stopButton != null)
-            {
-                stopButton.gameObject.SetActive(true);
-            }
-        }
+        if (_networkManager == null) return;
+
+        _networkManager.StartHost();
+        SetStatus("Waiting for opponent...");
+        SetLobbyButtonsActive(false);
+        if (stopButton != null) stopButton.gameObject.SetActive(true);
     }
 
     private void OnJoinClicked()
     {
-        if (_networkManager != null)
-        {
-            string ip = ipInputField != null ? ipInputField.text.Trim() : "localhost";
-            if (string.IsNullOrEmpty(ip))
-            {
-                ip = "localhost";
-            }
-            _networkManager.networkAddress = ip;
-            _networkManager.StartClient();
-            SetStatus($"Connecting to {ip}...");
-            SetLobbyButtonsActive(false);
-            if (stopButton != null)
-            {
-                stopButton.gameObject.SetActive(true);
-            }
-        }
+        if (_networkManager == null) return;
+
+        string ip = ipInputField != null ? ipInputField.text.Trim() : "localhost";
+        if (string.IsNullOrEmpty(ip)) ip = "localhost";
+
+        _networkManager.networkAddress = ip;
+        _networkManager.StartClient();
+        SetStatus($"Connecting to {ip}...");
+        SetLobbyButtonsActive(false);
+        if (stopButton != null) stopButton.gameObject.SetActive(true);
     }
 
     private void OnStopClicked()
     {
-        if (_networkManager != null)
-        {
-            if (NetworkServer.active && NetworkClient.isConnected)
-            {
-                _networkManager.StopHost();
-            }
-            else if (NetworkServer.active)
-            {
-                _networkManager.StopServer();
-            }
-            else
-            {
-                _networkManager.StopClient();
-            }
-        }
+        if (_networkManager == null) return;
+
+        if (NetworkServer.active && NetworkClient.isConnected)
+            _networkManager.StopHost();
+        else if (NetworkServer.active)
+            _networkManager.StopServer();
+        else
+            _networkManager.StopClient();
+
         ShowLobby();
     }
 
-    private void HandlePlayerCountChanged(int count)
+    private void HandleMatchState(MatchStateMessage msg)
     {
         if (playerCountText != null)
         {
-            playerCountText.text = $"Players: {count}/2";
+            playerCountText.text = $"Players: {msg.playerCount}";
         }
 
-        if (count >= 2)
+        if (msg.matchState == MatchState.WaitingForPlayers)
         {
-            PlayerController.IsGameActive = true;
-            SetStatus("Game started!");
-            gameObject.SetActive(false);
+            if (msg.playerCount > 0)
+            {
+                SetStatus("Waiting for opponent...");
+            }
         }
         else
         {
-            PlayerController.IsGameActive = false;
+            // Игра идёт — прячем лобби
+            if (lobbyPanel != null) lobbyPanel.SetActive(false);
         }
     }
 
     public void ShowLobby()
     {
         PlayerController.IsGameActive = false;
-        gameObject.SetActive(true);
-        if (lobbyPanel != null)
-        {
-            lobbyPanel.SetActive(true);
-        }
-        if (gamePanel != null)
-        {
-            gamePanel.SetActive(false);
-        }
+
+        if (lobbyPanel != null) lobbyPanel.SetActive(true);
+
         SetLobbyButtonsActive(true);
-        if (stopButton != null)
-        {
-            stopButton.gameObject.SetActive(false);
-        }
+        if (stopButton != null) stopButton.gameObject.SetActive(false);
         SetStatus("Welcome!");
-        if (playerCountText != null)
-        {
-            playerCountText.text = "Players: 0/2";
-        }
+        if (playerCountText != null) playerCountText.text = "Players: 0";
     }
 
     private void SetStatus(string msg)
     {
-        if (statusText != null)
-        {
-            statusText.text = msg;
-        }
+        if (statusText != null) statusText.text = msg;
     }
 
     private void SetLobbyButtonsActive(bool active)
     {
-        if (hostButton != null)
-        {
-            hostButton.gameObject.SetActive(active);
-        }
-        if (joinButton != null)
-        {
-            joinButton.gameObject.SetActive(active);
-        }
-        if (ipInputField != null)
-        {
-            ipInputField.gameObject.SetActive(active);
-        }
+        if (hostButton != null) hostButton.gameObject.SetActive(active);
+        if (joinButton != null) joinButton.gameObject.SetActive(active);
+        if (ipInputField != null) ipInputField.gameObject.SetActive(active);
     }
 }

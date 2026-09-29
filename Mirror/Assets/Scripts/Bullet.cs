@@ -4,8 +4,12 @@ using UnityEngine;
 public class Bullet : NetworkBehaviour
 {
     public float speed = 10f;
+
+    [SyncVar]
     private Vector2 _direction;
+
     private NetworkIdentity _ownerIdentity;
+    private int _ownerTeam;
     private Rigidbody2D _rb;
 
     private void Awake()
@@ -15,10 +19,11 @@ public class Bullet : NetworkBehaviour
         col.isTrigger = true;
     }
 
-    public void Init(Vector2 direction, NetworkIdentity owner)
+    public void Init(Vector2 direction, NetworkIdentity owner, int team)
     {
         _direction = direction.normalized;
         _ownerIdentity = owner;
+        _ownerTeam = team;
     }
 
     private void FixedUpdate()
@@ -28,21 +33,23 @@ public class Bullet : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isServer)
-        {
-            return;
-        }
+        if (!isServer) return;
 
+        // Не попадать в себя
         NetworkIdentity hitIdentity = other.GetComponent<NetworkIdentity>();
-        if (hitIdentity != null && hitIdentity == _ownerIdentity)
-        {
-            return;
-        }
+        if (hitIdentity != null && hitIdentity == _ownerIdentity) return;
 
-        PlayerHealth health = other.GetComponent<PlayerHealth>();
-        if (health != null)
+        // Проверка команды — нет урона союзникам
+        PlayerController hitPlayer = other.GetComponent<PlayerController>();
+        if (hitPlayer != null)
         {
-            health.TakeHit();
+            if (hitPlayer.team == _ownerTeam) return;
+
+            PlayerHealth health = other.GetComponent<PlayerHealth>();
+            if (health != null && !health.isDead)
+            {
+                health.TakeHit();
+            }
             NetworkServer.Destroy(gameObject);
             return;
         }
