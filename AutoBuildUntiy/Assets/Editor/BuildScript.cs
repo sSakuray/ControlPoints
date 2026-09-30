@@ -32,7 +32,7 @@ public class BuildScript
     [MenuItem("Build/WebGL")]
     public static void BuildWebGL()
     {
-        Debug.Log("Начало сборки под WebGL...");
+        Debug.Log("Начало сборки под WebGL.");
         BuildPipeline.BuildPlayer(EditorBuildSettings.scenes, "Builds/WebGL", BuildTarget.WebGL, BuildOptions.None);
         Debug.Log("Сборка под WebGL завершена: Builds/WebGL");
     }
