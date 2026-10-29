@@ -1,0 +1,211 @@
+Authorized using stored user info.
+stderr: "rm" я┐╜я┐╜ явля┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜реня┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜шнея┐╜
+я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜, я┐╜споя┐╜я┐╜яемя┐╜я┐╜ я┐╜рограмя┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ файя┐╜я┐╜я┐╜.
+
+Exporting assets from Unity.......
+
+[ Stage1 ] Assets exported from Unity and staged for further processing
+[ error ] $Failed to locate TTF file for the font named LegacyRuntime тАУ falling back to Arial substitute.
+Using C:/Windows/Fonts/arial.ttf file to generate an atlas for LegacyRuntime[698] font
+  Using alphabet  ┬з1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./┬▒!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Combined 97 glyphs into bitmap texture at D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage1/tmp/fonts/LegacyRuntime-698/output_0.png (59kb)
+Resources:
+{}
+[ Stage2 ] Assets postprocessed and bundled successfully
+Authorized using stored user info.
+╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.13.19+0d9f5a35a ╨┤╨╗╤П .NET Framework
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 16.10.2026 18:31:23.
+
+
+
+╨Я╤А╨╛╨╡╨║╤В "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л Rebuild).
+CoreClean:
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+  ╨д╨░╨╣╨╗ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+
+GenerateTargetFrameworkMonikerAttribute:
+╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В "GenerateTargetFrameworkMonikerAttribute" ╨┐╤А╨╛╨┐╤Г╤Б╨║╨░╨╡╤В╤Б╤П, ╤В╨░╨║ ╨║╨░╨║ ╨▓╤Б╨╡ ╨▓╤Л╤Е╨╛╨┤╨╜╤Л╨╡ ╤Д╨░╨╣╨╗╤Л ╨░╨║╤В╤Г╨░╨╗╤М╨╜╤Л ╨┐╨╛ ╨╛╤В╨╜╨╛╤И╨╡╨╜╨╕╤О ╨║ ╨▓╤Е╨╛╨┤╨╜╤Л╨╝.
+
+CoreCompile:
+  D:\MVS\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_6000;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_0;UNITY_6000_0_85 /highentropyva+ /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Demigiant\DOTween\Modules\DOTweenModuleUIToolkit.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\ChestClickable.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\ReplayButtonHandler.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scri
+pts\SoundEffects.cs" "D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\TutorialInfo\Scripts\Readme.cs" Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.1.AssemblyAttributes.cs"
+
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(25,41): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.victoryPanel" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(24,44): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.tutorialHand" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(13,45): warning CS0169: ╨Я╨╛╨╗╨╡ "GameManager3D.chestBurstParticles" ╨╜╨╕╨║╨╛╨│╨┤╨░ ╨╜╨╡ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В╤Б╤П. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(26,44): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.victoryCard" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(17,35): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.comboText" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(11,40): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.chestRoot" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(14,40): warning CS0169: ╨Я╨╛╨╗╨╡ "GameManager3D.worldVfxRoot" ╨╜╨╕╨║╨╛╨│╨┤╨░ ╨╜╨╡ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В╤Б╤П. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(12,40): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.chestLid" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(29,37): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.replayButton" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(16,35): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.scoreText" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(27,35): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.victoryScoreText" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(28,38): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.starImages" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  CompilerServer: server - server processed compilation - Scripts
+
+_CopyFilesMarkedCopyLocal:
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.xml" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
+
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date".
+
+CopyFilesToOutputDirectory:
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
+
+  Scripts -> C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll
+
+  ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb" ╨▓ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb".
+
+BridgeNetCompilerTask:
+  Bridge started
+
+      To enable detailed logging, configure "logging" in bridge.json.
+      https://github.com/bridgedotnet/Bridge/wiki/global-configuration#logging
+
+  Bridge done
+
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л Rebuild).
+
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+
+
+
+"C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В Rebuild ) (1) ->
+(╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В CoreCompile) -> 
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(25,41): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.victoryPanel" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(24,44): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.tutorialHand" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(13,45): warning CS0169: ╨Я╨╛╨╗╨╡ "GameManager3D.chestBurstParticles" ╨╜╨╕╨║╨╛╨│╨┤╨░ ╨╜╨╡ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В╤Б╤П. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(26,44): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.victoryCard" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(17,35): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.comboText" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(11,40): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.chestRoot" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(14,40): warning CS0169: ╨Я╨╛╨╗╨╡ "GameManager3D.worldVfxRoot" ╨╜╨╕╨║╨╛╨│╨┤╨░ ╨╜╨╡ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В╤Б╤П. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(12,40): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.chestLid" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(29,37): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.replayButton" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(16,35): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.scoreText" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(27,35): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.victoryScoreText" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\ReposGitHub\ControlPoints\Unity Playworks CP 2\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager3D.cs(28,38): warning CS0649: ╨Я╨╛╨╗╤О "GameManager3D.starImages" ╨╜╨╕╨│╨┤╨╡ ╨╜╨╡ ╨┐╤А╨╕╤Б╨▓╨░╨╕╨▓╨░╨╡╤В╤Б╤П ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡, ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╛╨╜╨╛ ╨▓╤Б╨╡╨│╨┤╨░ ╨▒╤Г╨┤╨╡╤В ╨╕╨╝╨╡╤В╤М ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О null. [C:\Users\sSakuray\Desktop\playable\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 12
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:06.18
+
+Source code compiled successfully!
+я╗┐
+[ error ] $я╗┐
+PHC: LP error code not found in JSON: 3015, JSON file might be outdated. Error message: Sequence contains no matching element
+
+Diagnostics gathered successfully
+[ Stage3 ] Code compiled and bundled successfully.
+[ Stage4 ] Target platform: playground
+[ Stage4 ] Package bundled successfully
+[ Stage4 ] Package uploaded successfully

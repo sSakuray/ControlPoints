@@ -1,0 +1,115 @@
+{
+    "BuildID": "952c4eec-ced4-4b19-8168-00307600cc05",
+    "Command": "project:deploy",
+    "ProjectID": "483aba1aba7a7d042b13bf94490745cd",
+    "ProjectStateHash": "8f7d11a18ae2e386dc94b8ed76fddf12e120db3a5d388648e42212deab3d891d",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1792094049613,
+    "EndTime": 1792094066025,
+    "PlaygroundUserID": 41907,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.85f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 4,
+    "Logs": [
+        {
+            "LogID": "436537e4-adfb-44e3-81ac-c9f3917922a9",
+            "Order": 1,
+            "Timestamp": 1792094066120,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3006",
+            "Description": "You are not using the Luna API: Playable.InstallFullGame",
+            "Details": [
+                "You are not using the Luna API: Playable.InstallFullGame. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+            ],
+            "DescriptionValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "DetailsValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "99cbd324-1464-4ed4-917f-ab544682fb84",
+            "Order": 1,
+            "Timestamp": 1792094066122,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3015",
+            "Description": "You are not the Game Ended API: LifeCycle.GameEnded",
+            "Details": [
+                "You are not using the Game Ended API: LifeCycle.GameEnded. Some ad networks require this call, please add the event to avoid the ad being rejected."
+            ],
+            "DescriptionValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "DetailsValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "7d7551d6-ea37-4776-bbc6-5153d8733a77",
+            "Order": 1,
+            "Timestamp": 1792094066122,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "965b751a-39c1-42d2-bc6f-ada64c7ec2d6",
+            "Order": 1,
+            "Timestamp": 1792094066123,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3011",
+            "Description": "You are not using any LunaPlaygroundFields attributes.",
+            "Details": [
+                "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": null,
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+  "ignores": [
+    "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs",
+    "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs",
+    "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+  ],
+  "groups": [
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
+    ],
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModuleUIToolkit.cs"
+    ],
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Scripts/ChestClickable.cs",
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Scripts/GameManager3D.cs",
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Scripts/ReplayButtonHandler.cs",
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Scripts/SoundEffects.cs"
+    ],
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/TutorialInfo/Scripts/Readme.cs"
+    ],
+    [
+      "C:/Users/sSakuray/Desktop/playable/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "C:/Users/sSakuray/Desktop/playable/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "C:/Users/sSakuray/Desktop/playable/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.1.AssemblyAttributes.cs"
+    ]
+  ]
+}

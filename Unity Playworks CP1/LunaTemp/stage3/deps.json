@@ -1,0 +1,17 @@
+{
+  "ignores": [],
+  "groups": [
+    [
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP1/LunaTemp/stage3/processed-scripts/Assets/Scripts/ClickerGame.cs"
+    ],
+    [
+      "C:/Users/sSakuray/Desktop/playable/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "C:/Users/sSakuray/Desktop/playable/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "C:/Users/sSakuray/Desktop/playable/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.1.AssemblyAttributes.cs"
+    ]
+  ]
+}

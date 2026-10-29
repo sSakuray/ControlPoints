@@ -1,6 +1,5 @@
 using UnityEngine;
 
-// Makes the assignment demonstrable in any scene without manual setup.
 public static class RemoteConfigDemo
 {
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
