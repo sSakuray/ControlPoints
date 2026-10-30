@@ -1,0 +1,5 @@
+{
+  "name": "FlappyComet.Advertising",
+  "rootNamespace": "FlappyComet.Advertising",
+  "references": ["UnityEngine.Advertisements"]
+}
