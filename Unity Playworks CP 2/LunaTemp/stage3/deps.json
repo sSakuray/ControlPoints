@@ -38,20 +38,22 @@
     [
       "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Scripts/ChestClickable.cs",
       "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Scripts/GameManager3D.cs",
-      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Scripts/ReplayButtonHandler.cs",
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Scripts/ReplayButtonHandler.cs"
+    ],
+    [
       "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/Scripts/SoundEffects.cs"
     ],
     [
       "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/LunaTemp/stage3/processed-scripts/Assets/TutorialInfo/Scripts/Readme.cs"
     ],
     [
-      "C:/Users/sSakuray/Desktop/playable/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/.playworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
     ],
     [
-      "C:/Users/sSakuray/Desktop/playable/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/.playworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
     ],
     [
-      "C:/Users/sSakuray/Desktop/playable/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.1.AssemblyAttributes.cs"
+      "D:/ReposGitHub/ControlPoints/Unity Playworks CP 2/.playworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.1.AssemblyAttributes.cs"
     ]
   ]
 }

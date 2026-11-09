@@ -1,7 +1,7 @@
 {
     "version": "7.2.0",
     "projectId": "483aba1aba7a7d042b13bf94490745cd",
-    "applicationID": 43564,
+    "applicationID": 0,
     "creativeName": "DoTween-Playworks",
     "pgServer": "EU",
     "window": {
@@ -167,8 +167,8 @@
         "unusedModules": [
             {
                 "name": "physics3d",
-                "excluded": false,
-                "forceIncluded": true
+                "excluded": true,
+                "forceIncluded": false
             },
             {
                 "name": "physics2d",
@@ -15426,7 +15426,7 @@
                     },
                     {
                         "name": "PingPong",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SmoothDamp",
@@ -18728,7 +18728,7 @@
                     },
                     {
                         "name": "SetAsLastSibling",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetSiblingIndex",
@@ -19872,7 +19872,7 @@
                     },
                     {
                         "name": "anchorMin#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "anchorMin#set",
@@ -30648,7 +30648,7 @@
                     },
                     {
                         "name": "insideUnitCircle#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "rotation#get",
@@ -33022,7 +33022,7 @@
                     },
                     {
                         "name": "DOAnchorMax",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DOAnchorMin",
@@ -33159,14 +33159,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "GetPointerDown",
-                        "excluded": false
-                    },
-                    {
-                        "name": "HandleScreenClick",
-                        "excluded": false
-                    },
-                    {
                         "name": "OnChestHit",
                         "excluded": false
                     },
@@ -33179,23 +33171,7 @@
                         "excluded": false
                     },
                     {
-                        "name": "CreateCoinObj",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SpawnFlyingCoin",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SpawnFloatingText",
-                        "excluded": false
-                    },
-                    {
                         "name": "TriggerWin",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SpawnBurstCoins",
                         "excluded": false
                     },
                     {
@@ -33215,11 +33191,23 @@
                         "excluded": false
                     },
                     {
-                        "name": "InitScoreBar",
+                        "name": "Punch",
                         "excluded": false
                     },
                     {
-                        "name": "InitProgressBar",
+                        "name": "ComboMultiplier#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StartGame",
+                        "excluded": false
+                    },
+                    {
+                        "name": "HitChest",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AnimateCoin",
                         "excluded": false
                     }
                 ]
@@ -33235,24 +33223,6 @@
                     {
                         "name": "OnPointerClick",
                         "excluded": true
-                    }
-                ]
-            },
-            {
-                "className": "SoundEffects",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "PlayHitSound",
-                        "excluded": false
-                    },
-                    {
-                        "name": "PlayCoinChime",
-                        "excluded": false
-                    },
-                    {
-                        "name": "PlayWinFanfare",
-                        "excluded": false
                     }
                 ]
             }
@@ -33330,10 +33300,10 @@
             "font": {
                 "default": {
                     "data": {
-                        "alphabet": " §1234567890-=qwertyuiop[]asdfghjkl;'\\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:\"|~ZXCVBNM<>?",
+                        "alphabet": " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZx!()+/,:.★",
                         "size": 64,
-                        "textureWidth": 1024,
-                        "textureHeight": 1024
+                        "textureWidth": 512,
+                        "textureHeight": 512
                     }
                 },
                 "overrides": []

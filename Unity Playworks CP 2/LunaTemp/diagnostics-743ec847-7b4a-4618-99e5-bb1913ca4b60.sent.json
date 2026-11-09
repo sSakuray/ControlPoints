@@ -1,0 +1,111 @@
+{
+    "BuildID": "743ec847-7b4a-4618-99e5-bb1913ca4b60",
+    "Command": "project:build",
+    "ProjectID": "483aba1aba7a7d042b13bf94490745cd",
+    "ProjectStateHash": "a361df2b25aab0a14182e118284be225448762955562d4a5f57f8b5ff58664e1",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1793896393579,
+    "EndTime": 1793896414239,
+    "PlaygroundUserID": 41907,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "develop",
+    "UnityVersion": "6000.0.85f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 4,
+    "Logs": [
+        {
+            "LogID": "6c1d1559-a7a7-46a7-afb6-358eebfc3214",
+            "Order": 2,
+            "Timestamp": 1793896414399,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3006",
+            "Description": "You are not using the Luna API: Playable.InstallFullGame",
+            "Details": [
+                "You are not using the Luna API: Playable.InstallFullGame. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+            ],
+            "DescriptionValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "DetailsValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "37be678e-3538-4ca0-96e0-7d69ec62d892",
+            "Order": 2,
+            "Timestamp": 1793896414399,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "d831984a-7153-476a-b1ce-e22505acbf22",
+            "Order": 2,
+            "Timestamp": 1793896414400,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3011",
+            "Description": "You are not using any LunaPlaygroundFields attributes.",
+            "Details": [
+                "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": null,
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "49c112cc-3365-49b3-a881-747572e16d00",
+            "Order": 0,
+            "Timestamp": 1793896398475,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1027",
+            "Description": "This DOTween version is not supported",
+            "Details": [
+                "The incorrect DOTween version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "1.2.705"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}
