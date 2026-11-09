@@ -15,11 +15,9 @@ namespace FlappyComet.Core
     {
         public static GameManager Instance { get; private set; }
 
-        private const string BestScoreKey = "FlappyComet_BestScore";
-
         public GameState CurrentState { get; private set; } = GameState.Ready;
         public int CurrentScore { get; private set; } = 0;
-        public int BestScore { get; private set; } = 0;
+        public int BestScore => GamePushProgress.Instance.BestScore;
 
         public event Action<GameState> OnStateChanged;
         public event Action<int, int> OnScoreChanged;
@@ -33,7 +31,15 @@ namespace FlappyComet.Core
             }
 
             Instance = this;
-            LoadBestScore();
+            GamePushProgress.Instance.OnProgressChanged += UpdateBestScore;
+        }
+
+        private void OnDestroy()
+        {
+            if (GamePushProgress.Instance != null)
+            {
+                GamePushProgress.Instance.OnProgressChanged -= UpdateBestScore;
+            }
         }
 
         private void Start()
@@ -66,11 +72,7 @@ namespace FlappyComet.Core
             }
 
             CurrentScore += amount;
-            if (CurrentScore > BestScore)
-            {
-                BestScore = CurrentScore;
-                SaveBestScore();
-            }
+            GamePushProgress.Instance.RecordScore(CurrentScore);
 
             OnScoreChanged?.Invoke(CurrentScore, BestScore);
         }
@@ -91,15 +93,9 @@ namespace FlappyComet.Core
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        private void LoadBestScore()
+        private void UpdateBestScore()
         {
-            BestScore = PlayerPrefs.GetInt(BestScoreKey, 0);
-        }
-
-        private void SaveBestScore()
-        {
-            PlayerPrefs.SetInt(BestScoreKey, BestScore);
-            PlayerPrefs.Save();
+            OnScoreChanged?.Invoke(CurrentScore, BestScore);
         }
     }
 }

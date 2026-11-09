@@ -19,6 +19,7 @@ namespace FlappyComet.Player
         [SerializeField] private CometTail customTail;
         [SerializeField] private ParticleSystem deathParticles;
         [SerializeField] private SpriteRenderer spriteRenderer;
+        [SerializeField] private RectTransform loginButton;
 
         private Rigidbody2D rb2d;
         private CircleCollider2D circleCollider;
@@ -244,6 +245,12 @@ namespace FlappyComet.Player
 
             if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
             {
+                if (loginButton != null && loginButton.gameObject.activeInHierarchy &&
+                    RectTransformUtility.RectangleContainsScreenPoint(loginButton, Mouse.current.position.ReadValue()))
+                {
+                    return false;
+                }
+
                 return true;
             }
 

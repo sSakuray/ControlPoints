@@ -18,6 +18,8 @@ namespace FlappyComet.UI
         [SerializeField] private TMP_Text finalScoreText;
         [SerializeField] private TMP_Text bestScoreText;
         [SerializeField] private Button restartButton;
+        [SerializeField] private TMP_Text playerProfileText;
+        [SerializeField] private Button loginButton;
         [SerializeField] private float restartInputDelay = 0.5f;
 
         private float gameOverTimer = 0f;
@@ -60,12 +62,20 @@ namespace FlappyComet.UI
             GameManager.Instance.OnStateChanged += HandleStateChanged;
             GameManager.Instance.OnScoreChanged += UpdateScoreDisplay;
 
+            loginButton.onClick.AddListener(GamePushProgress.Instance.Login);
+            GamePushProgress.Instance.OnProfileChanged += UpdateProfile;
             UpdateScoreDisplay(GameManager.Instance.CurrentScore, GameManager.Instance.BestScore);
             HandleStateChanged(GameManager.Instance.CurrentState);
         }
 
         private void OnDestroy()
         {
+            if (GamePushProgress.Instance != null)
+            {
+                GamePushProgress.Instance.OnProfileChanged -= UpdateProfile;
+                loginButton.onClick.RemoveListener(GamePushProgress.Instance.Login);
+            }
+
             if (GameManager.Instance != null)
             {
                 GameManager.Instance.OnStateChanged -= HandleStateChanged;
@@ -90,6 +100,7 @@ namespace FlappyComet.UI
 
         private void HandleStateChanged(GameState state)
         {
+            UpdateProfile();
             switch (state)
             {
                 case GameState.Ready:
@@ -130,6 +141,19 @@ namespace FlappyComet.UI
                     canRestart = true;
                     break;
             }
+        }
+
+        private void UpdateProfile()
+        {
+            GamePushProgress progress = GamePushProgress.Instance;
+            string playerId = progress.PlayerId > 0 ? progress.PlayerId.ToString() : "-";
+            string profile = progress.IsLoggedIn ? "Signed in" : "Guest";
+            if (progress.PlayerId > 0 && !progress.HasProfile)
+            {
+                profile = "Cached";
+            }
+            playerProfileText.text = $"ID: {playerId}  |  {profile}\n{progress.Status}";
+            loginButton.gameObject.SetActive(GameManager.Instance.CurrentState == GameState.Ready && progress.CanLogin);
         }
 
         private void UpdateScoreDisplay(int current, int best)
